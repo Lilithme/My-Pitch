@@ -21,9 +21,9 @@ While there’s always room for improvement, I hope this project inspires or hel
 ## Got Ideas?  
 If you have any suggestions or feedback, don’t hesitate to reach out. I’d love to hear your ideas for improvement! 😊  
 
-You can contact me on **Discord**: `lilith.me`
+You can contact me on **Discord**: [lilith.me](https://discord.com/users/lilith.me)
 
 ---
 
 ### Special Thanks  
-A big shoutout to **LamaCap** for your incredible help, advice, and patience with a dev newbie like me. Without you, I wouldn’t have even managed to upload this to GitHub! 😅  
+A big shoutout to **[LamaCap](https://github.com/jason-rietzke)** for your incredible help, advice, and patience with a dev newbie like me. Without you, I wouldn’t have even managed to upload this to GitHub! 😅  
