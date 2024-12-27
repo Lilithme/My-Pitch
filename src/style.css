@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Für moderne Browser */
+body {
+    overflow: hidden; /* Versteckt Scrollbalken und deaktiviert Scrollen */
+  }
+  /* Für Webkit-Browser (z. B. Chrome, Safari) */
+  body::-webkit-scrollbar {
+    display: none; /* Versteckt den Scrollbalken */
+  }
+
+html {
+    background: rgb(0, 0, 0);
+}
+
+.loading {
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(34, 34, 36);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.loader {
+    
+    margin: auto;
+    margin-top: 50vh;
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side, #ffffff 90%, #ffffff00);
+    background:
+        var(--_g) 0% 50%,
+        var(--_g) 50% 50%,
+        var(--_g) 100% 50%;
+    background-size: calc(100%/3) 100%;
+    animation: l7 1s infinite linear;
+}
+
+@keyframes l7 {
+    33% {
+        background-size: calc(100%/3) 0%, calc(100%/3) 100%, calc(100%/3) 100%
+    }
+
+    50% {
+        background-size: calc(100%/3) 100%, calc(100%/3) 0%, calc(100%/3) 100%
+    }
+
+    66% {
+        background-size: calc(100%/3) 100%, calc(100%/3) 100%, calc(100%/3) 0%
+    }
+}
+
+.blurred-bg {
+    background-image: url("/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    height: 400%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    padding: 0px;
+    margin: 0px;
+    /* background-size: 100% 100%; */
+
+}
+
+/* body
+{
+    overflow: hidden;
+}  */
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+}
+
+.section-content {
+    align-items: center;
+
+    color: #ffeded;
+    font-family: 'Cabin', sans-serif;
+
+
+    width: 50%;
+    min-height: 12rem;
+    max-height: 80%;
+    margin-left: 10%;
+    padding: 2rem;
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+.section-content h1 {
+    font-size: 2.5rem;
+}
+
+.section-content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    white-space: pre-wrap;
+}
+
+.section-content .hallo {
+    font-size: 6rem;
+}
+
+.section-content .ueberschrift {
+    font-size: 3rem;
+    margin-top: 1rem;
+    white-space: pre-wrap;
+}
+
+.section-content .joke {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    white-space: pre-wrap;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.section-content.first-content {
+    align-items: center;
+
+    color: #ffeded;
+    font-family: 'Cabin', sans-serif;
+
+    width: 100%;
+    min-height: 12rem;
+    max-height: 80%;
+    margin-left: 50%;
+    padding: 2rem;
+}
